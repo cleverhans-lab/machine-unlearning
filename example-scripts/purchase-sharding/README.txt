@@ -1,5 +1,4 @@
-Purchase dataset could be obtained [here](https://github.com/privacytrustlab/ml_privacy_meter/tree/master/datasets). 
-To customize number of labels, save the unlabelled data at `machine-unlearning/datasets/purchase/data.npy` and run `prepare_data.py`.
+Before the first time running experiments on purchase dataset or to customize number of labels used, please run `prepare_data.py` at `machine-unlearning/datasets/purchase`.
 
 The following scripts allow to run a sharding experiment on purchase dataset.
 
