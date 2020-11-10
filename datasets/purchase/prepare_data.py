@@ -4,20 +4,7 @@ from sklearn.cluster import KMeans
 from sklearn.model_selection import train_test_split
 
 
-if not os.path.exists('data.npy'):
-    data_list = []
-    with open('data.txt', 'r') as f:
-        line = f.readline()
-        counter = 0
-        while(line):
-            data_list.append([int(s) for s in line.split(' ')])
-            line = f.readline()
-
-    data = np.array(data_list)
-    print(data.shape)
-    np.save('data.npy', data)
-else:
-    data = np.load('data.npy')
+data = np.load('data.npy')
 
 num_class = 2
 
